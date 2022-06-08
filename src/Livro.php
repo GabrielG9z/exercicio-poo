@@ -5,7 +5,7 @@ class Livro{
     // propriedades/atributos
     private string $titulo;
     private string $autor;
-    private string $paginas = 0;
+    private string $paginas;
 
     /* Métodos de captura dos atributos/parametros */
 
