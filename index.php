@@ -11,19 +11,31 @@
     <hr>
 <h1>Livro</h1>
 <?php
-require_once "src/Livro.php";
+require_once "src/Tecnico.php";
+require_once "src/Didatico.php";
+require_once "src/Programacao.php";
 
-$livro = new Livro;
+
+$tecnico = new Tecnico;
+$tecnico->setFormato(['tecnico']);
+$tecnico->setPaginas(1200);
+$tecnico->setAutor("J.R.R Tolkien");
+$tecnico->setTitulo("O hobbit");
+
+ $didatico = new Didatico;
+ $programacao = new Programacao;
 
 
-$livro->setTitulo("Senhor dos anéis");
-$livro->setAutor("j.r.r Tolkien");
-$livro->setPaginas(1200);
 
+
+//$didatico->setNivel(['básico','intermediário','avançado']);
 ?>
-<h2><?=$livro->getTitulo()?></h2>
-<h3><?=$livro->getAutor()?></h3>
-<h3><?=$livro->getPaginas()?></h3>
+<pre><?=var_dump($tecnico,)?></pre>
+
+<h3><?=$tecnico->getAutor()?></h3>
+<h3><?=$tecnico->getFormato()?></h3>
+<h3><?=$tecnico->getPaginas()?></h3>
+<h3><?=$tecnico->getTitulo()?></h3>
 
 </body>
 </html>
