@@ -1,5 +1,5 @@
 <?php
-// Criando uma classe
+// Criando uma classe abstrata (uma classe que nao pode ser instânciada.)
 
 abstract class Livro{
     // propriedades/atributos
