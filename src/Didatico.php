@@ -14,13 +14,7 @@ class Didatico extends Tecnico {
         return $this->disciplina;
     }
 
-    /**
-     * Set the value of disciplina
-     *
-     * @param string $disciplina
-     *
-     * @return self
-     */
+    
     public function setDisciplina(string $disciplina): self
     {
         $this->disciplina = $disciplina;

@@ -8,6 +8,7 @@ abstract class Livro{
     private string $paginas;
 
 
+
     /**
      * Get the value of titulo
      *
@@ -78,5 +79,13 @@ abstract class Livro{
         $this->paginas = $paginas;
 
         return $this;
+    }
+// Método de polimorfismo a assinatura deve ser identica nos parametros e retornos da funcao
+    public function formataTitulo(): string {
+            
+        
+        return mb_strtoupper("<b>".$this->getTitulo())."</b>";
+        
+        
     }
 }
